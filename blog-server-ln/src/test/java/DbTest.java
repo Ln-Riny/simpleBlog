@@ -5,8 +5,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.ln.blog.server.Application;
-import com.ln.blog.server.infrastructure.repository.authors.Author;
-import com.ln.blog.server.infrastructure.repository.mapper.AuthorMapper;
+import com.ln.blog.server.infrastructure.repository.authors.po.Author;
+import com.ln.blog.server.infrastructure.repository.authors.mapper.AuthorMapper;
 
 /**
  * @author lining

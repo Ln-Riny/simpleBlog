@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.ln.blog.server.infrastructure.repository.mapper.AuthorMapper">
-    <resultMap id="authorMap" type="com.ln.blog.server.infrastructure.repository.authors.Author">
+<mapper namespace="com.ln.blog.server.infrastructure.repository.authors.mapper.AuthorMapper">
+    <resultMap id="authorMap" type="com.ln.blog.server.infrastructure.repository.authors.po.Author">
         <id column="id" property="id" jdbcType="VARCHAR" />
         <result column="real_name" property="realName" jdbcType="VARCHAR" />
         <result column="nick_name" property="nickName" jdbcType="VARCHAR" />
@@ -11,7 +11,7 @@
         id,real_name,nick_name
     </sql>
 
-    <insert id="insertAuthor" parameterType="com.ln.blog.server.infrastructure.repository.authors.Author">
+    <insert id="insertAuthor" parameterType="com.ln.blog.server.infrastructure.repository.authors.po.Author">
         INSERT INTO
         t_author(
         <include refid="base_column" />
@@ -20,7 +20,7 @@
         (#{id},#{realName},#{nickName})
     </insert>
 
-    <update id="updateAuthor" parameterType="com.ln.blog.server.infrastructure.repository.authors.Author">
+    <update id="updateAuthor" parameterType="com.ln.blog.server.infrastructure.repository.authors.po.Author">
         UPDATE t_author
         <set>
             <if test="realName != null">

@@ -1,4 +1,4 @@
-package com.ln.blog.server.infrastructure.repository.authors;
+package com.ln.blog.server.infrastructure.repository.authors.po;
 
 import lombok.AllArgsConstructor;
 

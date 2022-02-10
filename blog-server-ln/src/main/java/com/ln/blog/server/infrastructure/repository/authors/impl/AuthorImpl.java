@@ -1,8 +1,6 @@
-package com.ln.blog.server.infrastructure.repository.impl;
+package com.ln.blog.server.infrastructure.repository.authors.impl;
 
 import org.springframework.stereotype.Repository;
-
-import com.ln.blog.server.infrastructure.repository.mapper.AuthorMapper;
 
 /**
  * @author lining

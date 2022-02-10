@@ -1,9 +1,8 @@
-package com.ln.blog.server.infrastructure.repository.mapper;
+package com.ln.blog.server.infrastructure.repository.authors.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Repository;
 
-import com.ln.blog.server.infrastructure.repository.authors.Author;
+import com.ln.blog.server.infrastructure.repository.authors.po.Author;
 
 /**
  * @author lining
